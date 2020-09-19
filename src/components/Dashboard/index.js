@@ -63,7 +63,7 @@ function Dashboard({ user }) {
 
   useEffect(() => {
     searchQuestions();
-  }, [page]);
+  }, [page, searchQuestions]);
 
   async function getMyErrors() {
     const id = user.facebookId || user.googleId || user.twitterId;
